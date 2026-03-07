@@ -1,5 +1,6 @@
-import React from "react";
 import TechStack from "./TechStack";
+import GithubSection from "./GithubSection";
+import ProjectCard from "./ProjectCard";
 
 const RightCard = ({ className }) => {
   const line1 = [
@@ -13,6 +14,27 @@ const RightCard = ({ className }) => {
     { name: "mongodb", image: "/mongodb.svg" },
     { name: "expressjs", image: "/express.svg" },
     { name: "python", image: "/python.png" },
+  ];
+
+  const projects = [
+    {
+      imageUrl: "",
+      title: "Settled",
+      desc: "A simple platform about rental listings and move in",
+      url: "https://github.com/TheRealShreyash/settled",
+    },
+    {
+      imageUrl: "/huehaven.png",
+      title: "Hue Haven",
+      desc: "A web app to get color information",
+      url: "https://thehuehaven.netlify.app/",
+    },
+    {
+      imageUrl: "",
+      title: "GenQrco",
+      desc: "A simple Qrcode Generator",
+      url: "https://genqrco.netlify.app/",
+    },
   ];
 
   return (
@@ -30,6 +52,21 @@ const RightCard = ({ className }) => {
       </p>
       <div className="techstack mt-6">
         <TechStack items={line1} />
+      </div>
+      <GithubSection className="mt-6" />
+      <div className="mt-14">
+        <h2 className="font-semibold text-2xl">Projects</h2>
+        <div className="flex flex-col gap-3 mt-4">
+          {projects.map((project) => (
+            <a href={project.url} target="_blank">
+              <ProjectCard
+                imageUrl={project.imageUrl}
+                title={project.title}
+                desc={project.desc}
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

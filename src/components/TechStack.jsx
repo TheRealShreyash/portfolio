@@ -1,5 +1,3 @@
-import React from "react";
-
 const TechStack = ({ items }) => {
   return (
     <div className={`marquee-container`}>
