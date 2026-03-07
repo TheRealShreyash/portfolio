@@ -14,3 +14,46 @@
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
 }
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.marquee-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+}
+
+.marquee-content {
+  display: flex;
+  gap: 1.5rem; /* Space between tech badges */
+  padding: 10px 0;
+  white-space: nowrap;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+/* Pause when the user hovers over the tech stack */
+.marquee-content:hover {
+  animation-play-state: paused;
+}

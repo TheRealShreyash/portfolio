@@ -24,21 +24,21 @@ const LeftCard = ({ className }) => {
         <a href="https://github.com/therealshreyash">
           <img
             src="/GitHub_Invertocat_White.svg"
-            className="w-8 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
+            className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
             alt="Github"
           />
         </a>
         <a href="https://x.com/_wedan">
           <img
             src="/logo-white.png"
-            className="w-8 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
+            className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
             alt="X"
           />
         </a>
         <a href="#">
           <img
             src="/InBug-White.png"
-            className="w-8 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
+            className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
             alt="LinkedIn"
           />
         </a>

@@ -1,28 +1,18 @@
 import React from "react";
+import TechStack from "./TechStack";
 
 const RightCard = ({ className }) => {
   const line1 = [
-    { name: "javascript", image: "" },
-    { name: "nodejs", image: "" },
-    { name: "vite", image: "" },
-    { name: "react", image: "" },
-    { name: "html5", image: "" },
-    { name: "css3", image: "" },
-    { name: "tailwindcss", image: "" },
-    { name: "mongodb", image: "" },
-    { name: "expressjs", image: "" },
-    { name: "python", image: "" },
-  ];
-
-  const line2 = [
-    { name: "vscode", image: "" },
-    { name: "git", image: "" },
-    { name: "react", image: "" },
-    { name: "html5", image: "" },
-    { name: "css3", image: "" },
-    { name: "tailwindcss", image: "" },
-    { name: "mongodb", image: "" },
-    { name: "expressjs", image: "" },
+    { name: "javascript", image: "/js.png" },
+    { name: "nodejs", image: "/nodejs.png" },
+    { name: "vite", image: "/vite.png" },
+    { name: "react", image: "/react.png" },
+    { name: "html5", image: "/html5.png" },
+    { name: "css3", image: "/css3.png" },
+    { name: "tailwindcss", image: "/tailwindcss.png" },
+    { name: "mongodb", image: "/mongodb.svg" },
+    { name: "expressjs", image: "/express.svg" },
+    { name: "python", image: "/python.png" },
   ];
 
   return (
@@ -38,9 +28,8 @@ const RightCard = ({ className }) => {
         worked with Python in past. Apart from coding I also love watching anime
         and reading books.
       </p>
-      <div className="techstack">
-        <div className="line1"></div>
-        <div className="line2"></div>
+      <div className="techstack mt-6">
+        <TechStack items={line1} />
       </div>
     </div>
   );
