@@ -18,7 +18,7 @@ const RightCard = ({ className }) => {
 
   const projects = [
     {
-      imageUrl: "",
+      imageUrl: "/S.png",
       title: "Settled",
       desc: "A simple platform about rental listings and move in",
       url: "https://github.com/TheRealShreyash/settled",
@@ -39,7 +39,7 @@ const RightCard = ({ className }) => {
 
   return (
     <div className={className}>
-      <h1 className="text-7xl w-36 text-center font-semibold">
+      <h1 className="text-4xl md:text-7xl w-full md:w-36 text-center md:text-left font-semibold">
         Software <span className="text-[#898989]">Engineer</span>
       </h1>
       <p className="mt-7 text-[#898989]">

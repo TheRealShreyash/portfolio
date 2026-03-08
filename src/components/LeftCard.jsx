@@ -1,13 +1,17 @@
 const LeftCard = ({ className }) => {
   return (
-    <div className={className}>
+    <div
+      className={`flex flex-col items-center md:items-start md:sticky md:top-11 ${className}`}
+    >
       <img
         src="/favicon.jfif"
         alt="Favicon"
-        className="grayscale rounded-md w-64"
+        className="grayscale rounded-md w-48 md:w-64"
       />
-      <p className="text-left  font-semibold text-6xl mt-10">shreyash</p>
-      <p className="text-[#898989] font-bold w-60">
+      <p className="text-center md:text-left font-semibold text-4xl md:text-6xl mt-10">
+        shreyash
+      </p>
+      <p className="text-[#898989] font-bold w-full max-w-60 text-center md:text-left">
         a software engineer who works with the{" "}
         <span
           className="text-[#F8F8F8]
@@ -18,7 +22,7 @@ const LeftCard = ({ className }) => {
           web
         </span>
       </p>
-      <div className="socials flex items-center mt-8 gap-5">
+      <div className="socials flex items-center mt-8 gap-5 justify-center md:justify-start">
         <a href="https://github.com/therealshreyash">
           <img
             src="/GitHub_Invertocat_White.svg"
