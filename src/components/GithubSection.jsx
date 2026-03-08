@@ -12,7 +12,7 @@ const GithubSection = ({ className }) => {
       <div className="flex justify-between items-center mb-6 gap-2">
         <div className="flex items-center gap-2 md:gap-3 min-w-0">
           <img
-            src="/favicon.jfif"
+            src="/favicon.webp"
             className="w-5 h-5 md:w-6 md:h-6 grayscale rounded-2xl shrink-0"
             alt="GitHub"
           />

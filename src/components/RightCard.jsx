@@ -4,27 +4,27 @@ import ProjectCard from "./ProjectCard";
 
 const RightCard = ({ className }) => {
   const line1 = [
-    { name: "javascript", image: "/js.png" },
-    { name: "nodejs", image: "/nodejs.png" },
-    { name: "vite", image: "/vite.png" },
-    { name: "react", image: "/react.png" },
-    { name: "html5", image: "/html5.png" },
-    { name: "css3", image: "/css3.png" },
-    { name: "tailwindcss", image: "/tailwindcss.png" },
+    { name: "javascript", image: "/js.svg" },
+    { name: "nodejs", image: "/nodejs.svg" },
+    { name: "vite", image: "/vite.svg" },
+    { name: "react", image: "/react.svg" },
+    { name: "html5", image: "/html5.webp" },
+    { name: "css", image: "/css.svg" },
+    { name: "tailwindcss", image: "/tailwindcss.svg" },
     { name: "mongodb", image: "/mongodb.svg" },
     { name: "expressjs", image: "/express.svg" },
-    { name: "python", image: "/python.png" },
+    { name: "python", image: "/python.svg" },
   ];
 
   const projects = [
     {
-      imageUrl: "/S.png",
+      imageUrl: "/S.webp",
       title: "Settled",
       desc: "A simple platform about rental listings and move in",
       url: "https://github.com/TheRealShreyash/settled",
     },
     {
-      imageUrl: "/huehaven.png",
+      imageUrl: "/huehaven.webp",
       title: "Hue Haven",
       desc: "A web app to get color information",
       url: "https://thehuehaven.netlify.app/",
@@ -43,9 +43,10 @@ const RightCard = ({ className }) => {
         Software <span className="text-[#898989]">Engineer</span>
       </h1>
       <p className="mt-7 text-[#898989]">
-        Hello, myself <span className="text-white">Shreyash Koshta</span>, I am
-        currently learning <span className="text-white">full-stack</span> web
-        development. While I am still in the learning phase I am proficient in{" "}
+        Hello, myself <span className="text-white">Shreyash Koshta</span> a cs
+        undergrad, I am currently learning{" "}
+        <span className="text-white">full-stack</span> web development. While I
+        am still in the learning phase I am proficient in{" "}
         <span className="text-white">Javascript, TailwindCSS</span>. I have also
         worked with Python in past. Apart from coding I also love watching anime
         and reading books.

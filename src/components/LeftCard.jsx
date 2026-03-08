@@ -4,7 +4,7 @@ const LeftCard = ({ className }) => {
       className={`flex flex-col items-center md:items-start md:sticky md:top-11 ${className}`}
     >
       <img
-        src="/favicon.jfif"
+        src="/favicon.webp"
         alt="Favicon"
         className="grayscale rounded-md w-48 md:w-64"
       />
@@ -32,14 +32,14 @@ const LeftCard = ({ className }) => {
         </a>
         <a href="https://x.com/_wedan">
           <img
-            src="/logo-white.png"
+            src="/logo-white.webp"
             className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
             alt="X"
           />
         </a>
         <a href="#">
           <img
-            src="/InBug-White.png"
+            src="/InBug-White.webp"
             className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
             alt="LinkedIn"
           />
