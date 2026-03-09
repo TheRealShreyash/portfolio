@@ -1,5 +1,4 @@
-import { LeftCard, RightCard } from "./components";
-import ResumeFab from "./components/ResumeFab";
+import { LeftCard, RightCard, ResumeFab } from "./components";
 
 const App = () => {
   return (

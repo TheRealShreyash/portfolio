@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 const RightCard = ({ className }) => {
   const line1 = [
     { name: "javascript", image: "/js.svg" },
+    { name: "typescript", image: "/typescript.svg" },
     { name: "nodejs", image: "/nodejs.svg" },
     { name: "vite", image: "/vite.svg" },
     { name: "react", image: "/react.svg" },
@@ -12,8 +13,9 @@ const RightCard = ({ className }) => {
     { name: "css", image: "/css.svg" },
     { name: "tailwindcss", image: "/tailwindcss.svg" },
     { name: "mongodb", image: "/mongodb.svg" },
-    { name: "expressjs", image: "/express.svg" },
+    { name: "express", image: "/express.svg" },
     { name: "python", image: "/python.svg" },
+    { name: "git", image: "/git.svg" },
   ];
 
   const projects = [
