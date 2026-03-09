@@ -5,7 +5,7 @@ const TechStack = ({ items }) => {
         {[...items, ...items].map((tech, index) => (
           <div
             key={index}
-            className="flex items-center gap-2 rounded-md bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 cursor-pointer text-[#898989] hover:text-white duration-300 group"
+            className="flex items-center gap-2 rounded-md bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 cursor-pointer text-[#898989] hover:text-white duration-300 group  hover:-translate-y-0.5"
           >
             {tech.image && (
               <img
