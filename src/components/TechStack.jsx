@@ -11,7 +11,7 @@ const TechStack = ({ items }) => {
               <img
                 src={tech.image}
                 alt=""
-                className="size-4 grayscale brightness-75 shrink-0 transition-all duration-300 group-hover:grayscale-0 group-hover:brightness-100"
+                className="size-4 brightness-75 shrink-0 transition-all duration-300 group-hover:grayscale-0 group-hover:brightness-100"
               />
             )}
             <span className="text-sm font-medium lowercase">{tech.name}</span>

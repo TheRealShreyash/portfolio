@@ -42,16 +42,19 @@ const RightCard = ({ className }) => {
   return (
     <div className={className}>
       <h1 className="text-4xl md:text-7xl w-full md:w-36 text-center md:text-left font-semibold">
-        Software <span className="text-[#898989]">Engineer</span>
+        Software{" "}
+        <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          Engineer
+        </span>
       </h1>
       <p className="mt-7 text-[#898989]">
-        Hello, myself <span className="text-white">Shreyash Koshta</span> a cs
-        undergrad, I am currently learning{" "}
+        Hello, myself <span className="text-white">Shreyash Koshta</span> a CS
+        undergrad obsessed with building for the web, I am currently learning{" "}
         <span className="text-white">full-stack</span> web development. While I
         am still in the learning phase I am proficient in{" "}
-        <span className="text-white">Javascript, TailwindCSS</span>. I have also
-        worked with Python in past. Apart from coding I also love watching anime
-        and reading books.
+        <span className="text-white">Javascript, TailwindCSS</span>. I ship
+        things, break things and then fix them. Apart from coding I also love
+        watching anime and reading books.
       </p>
       <div className="techstack mt-6">
         <TechStack items={line1} />
@@ -61,7 +64,7 @@ const RightCard = ({ className }) => {
         <h2 className="font-semibold text-2xl">Projects</h2>
         <div className="flex flex-col gap-3 mt-4">
           {projects.map((project) => (
-            <a href={project.url} target="_blank">
+            <a key={project.title} href={project.url} target="_blank">
               <ProjectCard
                 imageUrl={project.imageUrl}
                 title={project.title}

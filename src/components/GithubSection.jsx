@@ -7,13 +7,13 @@ const GithubSection = ({ className }) => {
 
   return (
     <div
-      className={`p-6 bg-[#1a1a1a] border border-[#262626] rounded-xl mt-12 ${className || ""}`}
+      className={`p-6 bg-[#1a1a1a] border border-[#262626] rounded-xl mt-12 relative ${className || ""}`}
     >
       <div className="flex justify-between items-center mb-6 gap-2">
         <div className="flex items-center gap-2 md:gap-3 min-w-0">
           <img
             src="/favicon.webp"
-            className="w-5 h-5 md:w-6 md:h-6 grayscale rounded-2xl shrink-0"
+            className="w-5 h-5 md:w-6 md:h-6 rounded-2xl shrink-0"
             alt="GitHub"
           />
           <span className="pp-font text-base sm:text-lg md:text-xl truncate">

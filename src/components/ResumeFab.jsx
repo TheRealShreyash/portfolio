@@ -4,6 +4,7 @@ const ResumeFab = () => {
   const [showLabel, setShowLabel] = useState(false);
   return (
     <a
+    href="/resume.pdf"
       download="shreyashkoshta-resume.pdf"
       onMouseEnter={() => setShowLabel(true)}
       onMouseLeave={() => setShowLabel(false)}

@@ -12,7 +12,7 @@ const LeftCard = ({ className }) => {
           src="/favicon.webp"
           alt="Favicon"
           fetchPriority="high"
-          className={`grayscale rounded-md w-48 md:w-64 group-hover:grayscale-0 transition duration-300 ease-in-out group-hover:cursor-crosshair ${showStatus ? "grayscale-0" : "grayscale"}`}
+          className={`rounded-md w-48 md:w-64 transition duration-300 ease-in-out group-hover:cursor-crosshair hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)]`}
         />
 
         {/* status dot — bottom right corner */}
@@ -49,8 +49,7 @@ const LeftCard = ({ className }) => {
       <p className="text-[#898989] font-bold w-full max-w-60 text-center md:text-left">
         a software engineer who works with the{" "}
         <span
-          className="text-[#F8F8F8]
-        px-1.5 py-0.5 rounded-sm drop-shadow-[0_0_8px_rgba(248,248,248,0.6)]
+          className="text-purple-300 px-1.5 py-0.5 rounded-sm drop-shadow-[0_0_8px_rgba(192,132,252,0.8)]
         "
         >
           web
@@ -60,35 +59,32 @@ const LeftCard = ({ className }) => {
         <a href="https://github.com/therealshreyash">
           <img
             src="/GitHub_Invertocat_White.svg"
-            className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
+            className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="Github"
           />
         </a>
         <a href="https://x.com/_wedan">
           <img
             src="/logo-white.webp"
-            className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
+            className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="X"
           />
         </a>
         <a href="#">
           <img
             src="/InBug-White.webp"
-            className="w-6 cursor-default rounded-md hover:scale-110 transition duration-300 ease-in-out"
+            className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
+            alt="LinkedIn"
+          />
+        </a>
+        <a href="https://leetcode.com/u/2PQT9RQGGy/">
+          <img
+            src="/leetcode.svg"
+            className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="LinkedIn"
           />
         </a>
       </div>
-      {/* <button className="mt-10 md:mt-auto flex items-center md:gap-2 border border-[#262626] text-[#898989] rounded-md w-full justify-center py-1 hover:text-white hover:bg-[#1a1a1a] hover:border-[#444] transition-all duration-300 ease-in-out group">
-        resume{" "}
-        <img
-          src="/download.svg"
-          width={18}
-          height={18}
-          className="opacity-50 group-hover:opacity-100 group-hover:translate-y-0.5 transition-all"
-          alt=""
-        />
-      </button> */}
     </div>
   );
 };
