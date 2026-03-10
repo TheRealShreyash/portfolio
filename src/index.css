@@ -2,7 +2,8 @@
 @import "tailwindcss";
 @font-face {
   font-family: "pp-fragment-glare";
-  src: url("./assets/PP\ Fragment\ Glare.ttf");
+  /* src: url("./assets/PP\ Fragment\ Glare.ttf"); */
+  src: url("./assets/pp-fragment-glare.woff2");
   font-weight: normal;
   font-style: normal;
 }
