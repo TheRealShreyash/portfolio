@@ -70,7 +70,7 @@ const LeftCard = ({ className }) => {
             alt="X"
           />
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/shreyash-koshta-784b7a381/">
           <img
             src="/InBug-White.webp"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
