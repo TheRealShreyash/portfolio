@@ -32,7 +32,7 @@ const RightCard = ({ className }) => {
       url: "https://thehuehaven.netlify.app/",
     },
     {
-      imageUrl: "",
+      imageUrl: "/genqrco.webp",
       title: "GenQrco",
       desc: "A simple Qrcode Generator",
       url: "https://genqrco.netlify.app/",
