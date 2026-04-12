@@ -16,14 +16,17 @@ const RightCard = ({ className }) => {
     { name: "express", image: "/express.svg" },
     { name: "python", image: "/python.svg" },
     { name: "git", image: "/git.svg" },
+    { name: "postgres", image: "/postgres.svg" },
+    { name: "drizzle", image: "/drizzle.svg" },
+    // { name: "zod", image: "/zod.svg" },
   ];
 
   const projects = [
     {
-      imageUrl: "/S.webp",
-      title: "Settled",
-      desc: "A simple platform about rental listings and move in",
-      url: "https://github.com/TheRealShreyash/settled",
+      imageUrl: "/authX.webp",
+      title: "authX",
+      desc: "A simple yet robust auth service. Built on top of bun using express, typescript, postgres and drizzle orm",
+      url: "https://github.com/TheRealShreyash/auth-service",
     },
     {
       imageUrl: "/huehaven.webp",
