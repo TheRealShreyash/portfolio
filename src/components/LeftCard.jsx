@@ -47,9 +47,9 @@ const LeftCard = ({ className }) => {
         shreyash
       </p>
       <p className="text-[#898989] font-bold w-full max-w-60 text-center md:text-left">
-        a software engineer who works with the{" "}
+        a software engineer who works with the
         <span
-          className="text-purple-300 px-1.5 py-0.5 rounded-sm drop-shadow-[0_0_8px_rgba(192,132,252,0.8)]
+          className="text-purple-300 px-1.5 rounded-sm drop-shadow-[0_0_8px_rgba(192,132,252,0.8)]
         "
         >
           web
