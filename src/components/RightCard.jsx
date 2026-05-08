@@ -18,27 +18,65 @@ const RightCard = ({ className }) => {
     { name: "git", image: "/git.svg" },
     { name: "postgres", image: "/postgres.svg" },
     { name: "drizzle", image: "/drizzle.svg" },
-    // { name: "zod", image: "/zod.svg" },
   ];
 
   const projects = [
     {
+      title: "Iris",
+      desc: "An OIDC compliant oAuth server",
+      motivation: "",
+      techStack: ["bun", "express", "typescript", "postgres", "drizzle", "jwt"],
+      githubUrl: "https://github.com/TheRealShreyash/auth-service",
+      liveUrl: "https://iris.shreyxsh.me",
+    },
+    {
+      title: "Checkboxes",
+      desc: "Live collaboration 1k checkboxes inspired by \'1 million checkboxes\'",
+      motivation: "",
+      techStack: [
+        "bun",
+        "express",
+        "typescript",
+        "postgres",
+        "drizzle",
+        "redis",
+        "websockets",
+        "socket.io",
+        "express",
+      ],
+      githubUrl: "https://github.com/TheRealShreyash/auth-service",
+      liveUrl: "https://checkboxes.shreyxsh.me",
+      demoUrl: "https://x.com/_wedan/status/2050901448851145113",
+    },
+    {
       imageUrl: "/authX.webp",
       title: "authX",
-      desc: "A simple yet robust auth service. Built on top of bun using express, typescript, postgres and drizzle orm",
-      url: "https://github.com/TheRealShreyash/auth-service",
+      desc: "A simple yet robust auth service",
+      motivation:
+        "I kept copy-pasting auth boilerplate across projects and wanted a single service I could point any app at. Built it to understand JWTs and session management deeply rather than just using a library.",
+      techStack: ["bun", "express", "typescript", "postgres", "drizzle"],
+      githubUrl: "https://github.com/TheRealShreyash/auth-service",
+      liveUrl: "",
     },
     {
       imageUrl: "/huehaven.webp",
       title: "Hue Haven",
       desc: "A web app to get color information",
-      url: "https://thehuehaven.netlify.app/",
+      motivation:
+        "I was constantly switching between tools to get hex, rgb, and hsl values while designing. Hue Haven puts everything in one place with a clean UI.",
+      techStack: ["react", "tailwindcss", "vite"],
+      githubUrl: "",
+      liveUrl: "https://thehuehaven.netlify.app/",
     },
     {
       imageUrl: "/genqrco.webp",
       title: "GenQrco",
-      desc: "A simple Qrcode Generator",
-      url: "https://genqrco.netlify.app/",
+      desc: "A simple QR code generator",
+      motivation:
+        "Needed a fast, no-signup QR generator for a college project. Every existing tool was cluttered with ads, so I built a clean one in an afternoon.",
+      techStack: ["html", "css", "javascript"],
+      githubUrl: "",
+      liveUrl: "https://genqrco.netlify.app/",
     },
   ];
 
@@ -67,13 +105,7 @@ const RightCard = ({ className }) => {
         <h2 className="font-semibold text-2xl">Projects</h2>
         <div className="flex flex-col gap-3 mt-4">
           {projects.map((project) => (
-            <a key={project.title} href={project.url} target="_blank">
-              <ProjectCard
-                imageUrl={project.imageUrl}
-                title={project.title}
-                desc={project.desc}
-              />
-            </a>
+            <ProjectCard key={project.title} {...project} />
           ))}
         </div>
       </div>
