@@ -9,29 +9,31 @@ const RightCard = ({ className }) => {
     { name: "nodejs", image: "/nodejs.svg" },
     { name: "vite", image: "/vite.svg" },
     { name: "react", image: "/react.svg" },
-    { name: "html5", image: "/html5.webp" },
-    { name: "css", image: "/css.svg" },
+    { name: "bun", image: "/bun.svg" },
     { name: "tailwindcss", image: "/tailwindcss.svg" },
     { name: "mongodb", image: "/mongodb.svg" },
     { name: "express", image: "/express.svg" },
-    { name: "python", image: "/python.svg" },
-    { name: "git", image: "/git.svg" },
     { name: "postgres", image: "/postgres.svg" },
+    { name: "redis", image: "/redis.svg" },
     { name: "drizzle", image: "/drizzle.svg" },
+    { name: "socket.io", image: "/socket.io.svg" },
+    { name: "git", image: "/git.svg" },
+    { name: "python", image: "/python.svg" },
   ];
 
   const projects = [
     {
       title: "Iris",
-      desc: "An OIDC compliant oAuth server",
-      motivation: "",
+      desc: "A production-grade OIDC compliant authorization server",
+      motivation:
+        'Most developers treat auth as a black box — plug in Auth0/Clerk and move on. I wanted to understand what actually happens between clicking "Login with Google" and receiving a JWT. So I built Iris from scratch, implementing the full authorization code flow with PKCE, refresh token rotation, and JWT signing without any auth library.',
       techStack: ["bun", "express", "typescript", "postgres", "drizzle", "jwt"],
       githubUrl: "https://github.com/TheRealShreyash/auth-service",
       liveUrl: "https://iris.shreyxsh.me",
     },
     {
       title: "Checkboxes",
-      desc: "Live collaboration 1k checkboxes inspired by \'1 million checkboxes\'",
+      desc: "Real-time multiplayer shared canvas 1000 checkboxes, infinite chaos",
       motivation: "",
       techStack: [
         "bun",
@@ -40,7 +42,6 @@ const RightCard = ({ className }) => {
         "postgres",
         "drizzle",
         "redis",
-        "websockets",
         "socket.io",
         "express",
       ],
@@ -61,7 +62,7 @@ const RightCard = ({ className }) => {
     {
       imageUrl: "/huehaven.webp",
       title: "Hue Haven",
-      desc: "A web app to get color information",
+      desc: "A clean, distraction-free color toolkit for designers and developers",
       motivation:
         "I was constantly switching between tools to get hex, rgb, and hsl values while designing. Hue Haven puts everything in one place with a clean UI.",
       techStack: ["react", "tailwindcss", "vite"],
@@ -71,10 +72,10 @@ const RightCard = ({ className }) => {
     {
       imageUrl: "/genqrco.webp",
       title: "GenQrco",
-      desc: "A simple QR code generator",
+      desc: "A fast, no-signup QR code generator with zero clutter",
       motivation:
-        "Needed a fast, no-signup QR generator for a college project. Every existing tool was cluttered with ads, so I built a clean one in an afternoon.",
-      techStack: ["html", "css", "javascript"],
+        "Every existing tool was cluttered with ads, so I built a clean one in an afternoon.",
+      techStack: ["react", "vite", "yarn"],
       githubUrl: "",
       liveUrl: "https://genqrco.netlify.app/",
     },
