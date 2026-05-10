@@ -15,6 +15,7 @@ const RightCard = ({ className }) => {
     { name: "express", image: "/express.svg" },
     { name: "postgres", image: "/postgres.svg" },
     { name: "redis", image: "/redis.svg" },
+    { name: "docker", image: "/docker.svg" },
     { name: "drizzle", image: "/drizzle.svg" },
     { name: "socket.io", image: "/socket.io.svg" },
     { name: "git", image: "/git.svg" },
@@ -43,7 +44,6 @@ const RightCard = ({ className }) => {
         "drizzle",
         "redis",
         "socket.io",
-        "express",
       ],
       githubUrl: "https://github.com/TheRealShreyash/auth-service",
       liveUrl: "https://checkboxes.shreyxsh.me",
@@ -90,13 +90,14 @@ const RightCard = ({ className }) => {
         </span>
       </h1>
       <p className="mt-7 text-[#898989]">
-        Hello, myself <span className="text-white">Shreyash Koshta</span> a CS
-        undergrad obsessed with building for the web, I am currently learning{" "}
-        <span className="text-white">full-stack</span> web development. While I
-        am still in the learning phase I am proficient in{" "}
-        <span className="text-white">Javascript, TailwindCSS</span>. I ship
-        things, break things and then fix them. Apart from coding I also love
-        watching anime and reading books.
+        A cs undergrad who can't stop building. I dig into how things work. I've
+        shipped auth systems, real-time apps, and tools I actually use. Mostly
+        with TypeScript, Node.js, and whatever gets the job done. Apart from
+        code — anime and books.
+      </p>
+      <p className="mt-3 text-[#898989]">
+        <span className="text-white">Lets build something:</span>{" "}
+        koshta.shreyash02@gmail.com
       </p>
       <div className="techstack mt-6">
         <TechStack items={line1} />

@@ -11,6 +11,11 @@
   font-family: "pp-fragment-glare";
 }
 
+::selection {
+  background-color: #ae63f49d;
+  color: #ffffff;
+}
+
 @keyframes marquee-scroll {
   0% {
     transform: translateX(-50%);
