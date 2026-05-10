@@ -92,7 +92,7 @@ const ProjectCard = ({
                 {techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs text-[#d4d4d4] bg-[#2a2a2a] border border-[#3a3a3a] rounded-md px-2.5 py-1 font-mono hover:border-[#555] hover:text-white transition-colors duration-200"
+                    className="text-xs text-[#d4d4d4] bg-[#2a2a2a] border border-[#3a3a3a] rounded-md px-2.5 py-1 font-mono hover:border-[#555] hover:text-white transition-colors duration-200 cursor-default"
                   >
                     {tech}
                   </span>
