@@ -29,7 +29,7 @@ const RightCard = ({ className }) => {
       motivation:
         'Most developers treat auth as a black box — plug in Auth0/Clerk and move on. I wanted to understand what actually happens between clicking "Login with Google" and receiving a JWT. So I built Iris from scratch, implementing the full authorization code flow with PKCE, refresh token rotation, and JWT signing without any auth library.',
       techStack: ["bun", "express", "typescript", "postgres", "drizzle", "jwt"],
-      githubUrl: "https://github.com/TheRealShreyash/auth-service",
+      githubUrl: "https://github.com/TheRealShreyash/iris",
       liveUrl: "https://iris.shreyxsh.me",
     },
     {
