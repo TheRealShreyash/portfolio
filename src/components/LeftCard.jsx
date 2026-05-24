@@ -56,28 +56,28 @@ const LeftCard = ({ className }) => {
         </span>
       </p>
       <div className="socials flex items-center mt-8 gap-5 justify-center md:justify-start">
-        <a href="https://github.com/therealshreyash">
+        <a href="https://github.com/therealshreyash" target="_blank" rel="noopener noreferrer">
           <img
             src="/GitHub_Invertocat_White.svg"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="Github"
           />
         </a>
-        <a href="https://x.com/_wedan">
+        <a href="https://x.com/_wedan" target="_blank" rel="noopener noreferrer">
           <img
             src="/logo-white.webp"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="X"
           />
         </a>
-        <a href="https://www.linkedin.com/in/shreyash-koshta-784b7a381/">
+        <a href="https://www.linkedin.com/in/shreyash-koshta-784b7a381/" target="_blank" rel="noopener noreferrer">
           <img
             src="/InBug-White.webp"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="LinkedIn"
           />
         </a>
-        <a href="https://leetcode.com/u/2PQT9RQGGy/">
+        <a href="https://leetcode.com/u/2PQT9RQGGy/" target="_blank" rel="noopener noreferrer">
           <img
             src="/leetcode.svg"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
