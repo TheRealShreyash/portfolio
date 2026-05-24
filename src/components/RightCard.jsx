@@ -24,6 +24,27 @@ const RightCard = ({ className }) => {
 
   const projects = [
     {
+      imageUrl: "/pulse.webp",
+      title: "Pulse",
+      desc: "A real-time polling platform where creators can build live polls, share them instantly, and watch responses roll in as they happen. Supports both anonymous and authenticated voting with duplicate prevention, a live analytics dashboard with response velocity tracking, and shareable result cards.",
+      motivation:
+        "I wanted to explore real-time bidirectional communication in a product that actually benefits from it. Polls felt perfect because the moment a vote lands, everyone in the room should feel it. Built this to go deep on Socket.IO room management, JWKS-based JWT auth, and shipping a complete full-stack product from scratch under pressure.",
+      techStack: [
+        "bun",
+        "express",
+        "typescript",
+        "postgres",
+        "drizzle",
+        "socket.io",
+        "tanstack router",
+        "vite",
+        "react",
+        "tailwindcss",
+      ],
+      githubUrl: "https://github.com/TheRealShreyash/pulse",
+      liveUrl: "https://pulse.shreyxsh.me",
+    },
+    {
       title: "Iris",
       desc: "A production-grade OIDC compliant authorization server",
       motivation:
