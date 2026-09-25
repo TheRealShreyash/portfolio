@@ -7,7 +7,7 @@ const GithubSection = ({ className }) => {
 
   return (
     <div
-      className={`p-6 bg-[#1a1a1a] border border-[#262626] rounded-xl mt-12 relative ${className || ""}`}
+      className={`p-6 bg-[#1a1a1a] border border-[#262626] rounded-xl relative ${className || ""}`}
     >
       <div className="flex justify-between items-center mb-6 gap-2">
         <div className="flex items-center gap-2 md:gap-3 min-w-0">
