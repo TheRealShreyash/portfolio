@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Shuffle from "./ShuffleText";
+
+const shuffleStyle = { fontFamily: "inherit" };
 
 const LeftCard = ({ className }) => {
   const [showStatus, setShowStatus] = useState(false);
@@ -43,9 +46,22 @@ const LeftCard = ({ className }) => {
           </div>
         </div>
       </div>
-      <p className="text-center md:text-left font-semibold text-4xl md:text-6xl mt-10">
-        shreyash
-      </p>
+      <Shuffle
+        text="shreyash"
+        className="font-semibold mt-10 !text-4xl md:!text-6xl !leading-10 md:!leading-none !normal-case"
+        style={shuffleStyle}
+        effect="blur"
+        shuffleDirection="up"
+        duration={0.8}
+        animationMode="center"
+        shuffleTimes={5}
+        ease="power3.out"
+        stagger={0.04}
+        rootMargin="0px"
+        triggerOnce={true}
+        triggerOnHover={false}
+        scrambleCharset="abcdefghijklmnopqrstuvwxyz"
+      />
       <p className="text-[#898989] font-bold w-full max-w-60 text-center md:text-left">
         a software engineer who works with the
         <span
@@ -56,28 +72,44 @@ const LeftCard = ({ className }) => {
         </span>
       </p>
       <div className="socials flex items-center mt-8 gap-5 justify-center md:justify-start">
-        <a href="https://github.com/therealshreyash" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/therealshreyash"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/GitHub_Invertocat_White.svg"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="Github"
           />
         </a>
-        <a href="https://x.com/_wedan" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://x.com/_wedan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/logo-white.webp"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="X"
           />
         </a>
-        <a href="https://www.linkedin.com/in/shreyash-koshta-784b7a381/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/shreyash-koshta-784b7a381/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/InBug-White.webp"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
             alt="LinkedIn"
           />
         </a>
-        <a href="https://leetcode.com/u/2PQT9RQGGy/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://leetcode.com/u/2PQT9RQGGy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/leetcode.svg"
             className="w-6 cursor-default rounded-md hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] transition duration-300"
