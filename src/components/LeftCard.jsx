@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Shuffle from "./ShuffleText";
+import Shuffle from "./util/ShuffleText";
 
 const shuffleStyle = { fontFamily: "inherit" };
 

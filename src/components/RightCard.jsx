@@ -39,6 +39,23 @@ const RightCard = ({ className }) => {
 
   const projects = [
     {
+      imageUrl: "/krypr.webp",
+      title: "Krypr",
+      desc: "Ask questions about any GitHub repo and get answers cited down to the line number",
+      motivation:
+        "Reading an unfamiliar codebase is slow, and most AI chat tools will happily make things up about it. I wanted retrieval that stays grounded in the actual code, so I built Krypr: it crawls a repo through the GitHub API, chunks and embeds the code into Pinecone, and answers with citations you can click through. The pipeline runs on durable Inngest steps, so a failure while embedding never re-clones the repository.",
+      techStack: [
+        "bun",
+        "express",
+        "postgres",
+        "prisma",
+        "inngest",
+        "pinecone",
+        "langchain",
+      ],
+      liveUrl: "https://krypr.shreyxsh.me",
+    },
+    {
       imageUrl: "/pulse.webp",
       title: "Pulse",
       desc: "A real-time polling platform where creators can build live polls, share them instantly, and watch responses roll in as they happen. Supports both anonymous and authenticated voting with duplicate prevention, a live analytics dashboard with response velocity tracking, and shareable result cards.",
